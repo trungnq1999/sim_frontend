@@ -123,5 +123,21 @@ namespace Sim_frontend.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(USER uSER)
+        {
+            var obj = db.USERs.Where(m => m.UserName == uSER.UserName).Where(m => m.Password == uSER.Password).ToList();
+            if (obj.Count ==1)
+            {
+                // Login thanh cong
+
+            }
+            return View();
+        }
     }
 }
