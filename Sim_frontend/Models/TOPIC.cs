@@ -7,23 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sim_frontend
+namespace Sim_frontend.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class AspNetRole
+    public partial class TOPIC
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public AspNetRole()
+        public TOPIC()
         {
-            this.AspNetUsers = new HashSet<AspNetUser>();
+            this.CONCEPTs = new HashSet<CONCEPT>();
         }
     
-        public string Id { get; set; }
-        public string Name { get; set; }
+        public string TopicID { get; set; }
+        public string SubjectID { get; set; }
+        public Nullable<double> W_Prerequisite { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AspNetUser> AspNetUsers { get; set; }
+        public virtual ICollection<CONCEPT> CONCEPTs { get; set; }
     }
 }

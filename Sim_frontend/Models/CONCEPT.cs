@@ -7,17 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sim_frontend
+namespace Sim_frontend.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class AspNetUserLogin
+    public partial class CONCEPT
     {
-        public string LoginProvider { get; set; }
-        public string ProviderKey { get; set; }
-        public string UserId { get; set; }
+        public string ConceptID { get; set; }
+        public string TopicID { get; set; }
+        public string Concept_Name { get; set; }
+        public string Concept_Content { get; set; }
+        public Nullable<double> Concept_Weight { get; set; }
     
-        public virtual AspNetUser AspNetUser { get; set; }
+        public virtual TOPIC TOPIC { get; set; }
     }
 }

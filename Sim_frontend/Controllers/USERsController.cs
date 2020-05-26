@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Sim_frontend;
+using Sim_frontend.Models;
 
 namespace Sim_frontend.Controllers
 {

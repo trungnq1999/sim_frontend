@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sim_frontend
+namespace Sim_frontend.Models
 {
     using System;
     using System.Data.Entity;
